@@ -1,0 +1,174 @@
+:root{
+    --color-primary: #0A3871;
+    --color-secondary: #00bcd4;
+    --color-background:#F3F5FC;
+    --color-gray:#495057;
+    --color-white:#fff;
+    --font-primary:'Inter',sans-serif;
+}
+
+
+
+
+
+*{
+    margin:0;
+    padding:0;
+}
+
+body {
+    font-family:var(--font-primary);
+    background-color:var(--color-background);
+}
+
+.main{
+    width:100%;
+    display:flex;
+    justify-content:space-between;
+}
+.text-area{
+    width:36rem;
+    height:4.8rem;
+    background:none;
+    border:var(--color-secondary);
+    color:var(--color-primary);
+    font-size:32px;
+    font-weight:400;
+    padding-left:5%;
+}
+.text-area::placeholder{
+    color:var(--color-primary);
+}
+.text-area:focus{
+    outline:none;
+}
+.section-text-area{
+    display: inline-flex;
+    margin: 5rem 0 2rem 0;
+    flex-wrap: wrap;
+    align-content: stretch;
+    flex-direction: column;
+    justify-content: space-between;
+    width:50%;
+}
+.aviso{
+    display:flex;
+    color:var(--color-gray);
+    font-size:12px;
+    font-weight:400;
+    padding-left:5%;
+    margin-bottom:10px;     
+
+}
+.logo-alura{
+    margin-top:40px;
+    margin-left:80px;
+}
+.section-msg-codificada{
+    width:400px;
+    height:800px;
+    background-color:var(--color-white);
+    border-radius:32px;
+    display: inline-flex;
+    margin:40px 40px 0 0 ;
+    flex-wrap: wrap;
+    align-content: stretch;
+    flex-direction: column;
+    justify-content: space-between;
+    box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08)
+}
+.section-buttons{
+    display:flex;
+    justify-content:space-around;
+    align-items:center;
+
+}
+.section-buttons button{
+    width:328px;
+    height:67px;
+    border-radius:24px;
+    color:var(--color-white);
+    font-size:1rem;
+    font-weight:400;
+    border:none;
+    outline:none;
+    cursor:pointer
+}
+.section-buttons button.button-descriptografar{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    width:336px;
+    height:67px;
+    border:1px solid var(--color-primary);
+    background-color:var(--color-background);
+    color:var(--color-primary);
+    border-radius:24px;
+    
+}
+.section-buttons button.button-criptografar{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    width:336px;
+    height:67px;
+    background-color:var(--color-primary);
+    color:var(--color-white);
+    border-radius:24px;
+}
+.copiarBttn{
+    display:flex;
+    justify-content:center;
+    margin: 0 32px 32px 32px;
+    width:336px;
+    height:67px;
+    border:1px solid var(--color-primary);
+    border-radius:24px;
+}
+.copiarBttn button{
+    background:none;
+    color:var(--color-primary);
+    font-size:1rem;
+    font-weight:400;
+    border:none;
+    outline:none;
+    width:100%;
+}
+.copiarBttn:hover{
+    background-color:var(--color-primary);
+    color:var(--color-white);
+}
+.copiarBttn button:hover{
+    color:var(--color-white);
+    cursor:pointer;
+
+}
+
+.mensagens {
+    margin-top:2rem;
+    width:100%;
+    height:80%;
+    display: inline-flex;
+    flex-wrap: wrap;
+    align-content: stretch;
+    flex-direction: column;
+    justify-content: space-evenly;
+    text-align:center;
+
+}
+.mensagens .msg-cripto{
+    font-family:var(--font-primary);
+    margin:1rem 2rem;    
+    font-size:16px;
+    color:var(--color-gray);
+}
+
+#msg-aviso{
+    color:var(--color-gray-secundary);
+    font-weight:700;
+}
+.mensagens img{
+    margin:0 auto;
+    width:80%;
+    border-radius:32px;
+}
